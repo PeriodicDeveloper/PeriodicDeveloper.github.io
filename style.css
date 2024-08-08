@@ -13,6 +13,7 @@ body {
 	flex: 33%;
 	margin: 0;
 }
+
 .projectLink {
 	flex: 1;
 	background-color: rgba(0, 0, 0, 0.6);
@@ -21,7 +22,15 @@ body {
 	margin: 0.5em;
 	border-radius: 0.5em;
 	box-shadow: 0 0 0.3em magenta;
-	min-width: 400px;
+	min-width: 30%;
+}
+@media(orientation: portrait) {
+	#showcase {
+		flex-flow: column wrap;
+	}
+	header {
+		text-align: center;
+	}
 }
 .thumbnail {
 	object-fit: contain;
