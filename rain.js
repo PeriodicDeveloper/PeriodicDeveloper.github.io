@@ -39,7 +39,7 @@ class RainDrop {
       this.rain.ctx.beginPath();
       let rx = this.size / (this.splashPoint / this.y);
       let ry = (this.splashPoint / this.y) * this.size / 5;
-      this.rain.ctx.ellipse(this.x, this.y, rx, ry, 0, 0, Math.PI * 2);
+      this.rain.ctx.ellipse(this.x-rx, this.y-ry, rx, ry, 0, 0, Math.PI * 2);
       this.rain.ctx.stroke();
    }
    reset() {
