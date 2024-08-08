@@ -7,7 +7,7 @@ function generateCard(titleText, textDesc, imgSrc, url) {
 
 	let thumbnail = document.createElement("img");
 	thumbnail.setAttribute("src", imgSrc);
-	thumbnail.classList.add("thumb");
+	thumbnail.classList.add("thumbnail");
 
 	let textBox = document.createElement("div");
 	textBox.classList.add("textBox");
@@ -22,6 +22,7 @@ function generateCard(titleText, textDesc, imgSrc, url) {
 	
 	let anchor = document.createElement("a");
 	anchor.setAttribute("href", url);
+	anchor.classList.add("projectLink");
 
 	textBox.append(title, description);
 	card.append(thumbnail, textBox);
@@ -31,10 +32,22 @@ function generateCard(titleText, textDesc, imgSrc, url) {
 }
 const PROJECTS = [
 	{
-		title: "TetrisJS",
+		title: "Tetris JS",
 		description: "Minimal version of Tetris, written in JavaScript",
 		thumbnail: "img/TetrisJS.webp",
 		url: "TetrisJS/",
+	},
+	{
+		title: "Game of Life",
+		description: "Conway's game of life, with color indicating cell age",
+		thumbnail: "img/GameOfLife.webp",
+		url: "GameOfLife/",
+	},
+	{
+		title: "Ice Skating Guy in Hat",
+		description: "Control an army of RGB ice skating men in Asian hats!",
+		thumbnail: "img/IceSkatingGuyInHat.webp",
+		url: "IceSkatingGuyInHat/",
 	}
 ];
 

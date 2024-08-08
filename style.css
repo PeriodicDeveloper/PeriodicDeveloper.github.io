@@ -4,3 +4,21 @@ header {
 	font-family: "Inter", sans-serif;
 	font-optical-sizing: auto;
 }
+#showcase {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-flow: row wrap;
+	flex: 33%;
+}
+.projectLink {
+	flex: 1;
+	display: block;
+	background-color: gray;
+	color: inherit;
+}
+.thumbnail {
+	object-fit: contain;
+	max-width: 100%;
+}
+
