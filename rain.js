@@ -1,6 +1,7 @@
 class Artwork {
    constructor() {
       this.canvas = document.createElement("canvas");
+			this.canvas.setAttribute("id", "background-animation");
       this.ctx = this.canvas.getContext('2d');
       document.body.appendChild(this.canvas);
       this.fileName = "Artwork";
@@ -113,5 +114,5 @@ let rain = new Rain({
       drop: 3,
       splash: 10,
    },
-   avgSpeed: 10,
+   avgSpeed: 3,
 });

@@ -3,22 +3,41 @@
 header {
 	font-family: "Inter", sans-serif;
 	font-optical-sizing: auto;
+	color: lightgray;
+}
+body {
+	background-color: black;
 }
 #showcase {
 	display: flex;
-	justify-content: space-around;
-	align-items: center;
+	justify-content: space-evenly;
 	flex-flow: row wrap;
 	flex: 33%;
+	margin: 0;
+}
+main {
+	color: lightgray;
 }
 .projectLink {
 	flex: 1;
-	display: block;
-	background-color: gray;
+	background-color: rgba(0, 0, 0, 0.6);
 	color: inherit;
+	padding: 0.5em;
+	margin: 0.5em;
+	border-radius: 0.5em;
+	border: solid purple;
+	min-width: 400px;
 }
 .thumbnail {
 	object-fit: contain;
 	max-width: 100%;
+}
+#background-animation {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+	z-index: -1;
+	opacity: 70%;
 }
 
